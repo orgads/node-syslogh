@@ -1,45 +1,44 @@
 {
-	"name": "syslogh",
-	"version": "1.2.1",
-	"description": "Log to the system's Syslog. Provides simple native bindings to <syslog.h> and syslog(3). Works on Node v0.10 up to v4.",
-	"keywords": ["syslog", "rfc3164"],
-	"homepage": "https://github.com/moll/node-syslogh",
-	"bugs": "https://github.com/moll/node-syslogh/issues",
-	"os": [ "!win32" ],
-	"author": {
-		"name": "Andri Möll",
-		"email": "andri@dot.ee",
-		"url": "http://themoll.com"
-	},
-
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/moll/node-syslogh.git"
-	},
-
-	"licenses": [{
-		"type": "LAGPL",
-		"url": "https://github.com/moll/node-syslogh/blob/master/LICENSE"
-	}],
-
-	"main": "index.js",
-
-	"scripts": {
-		"node-gyp": "node-gyp",
-		"test": "make test",
-		"install": "node-gyp rebuild"
-	},
-
-	"dependencies": {
-		"bindings": ">= 1.1 < 2",
-		"nan": "^2.0.9"
-	},
-
-	"devDependencies": {
-		"mocha": ">= 1.12.0 < 2",
-		"must": "< 1",
-		"underscore": ">= 1.1.4 < 1.6"
-	},
-
-	"engines": {"node": ">= 0.10.28 < 0.11 || >= 0.11.15"}
+  "name": "syslogh",
+  "version": "1.2.1",
+  "description": "Log to the system's Syslog. Provides simple native bindings to <syslog.h> and syslog(3). Works on Node v0.10 up to v4.",
+  "keywords": [
+    "syslog",
+    "rfc3164"
+  ],
+  "homepage": "https://github.com/moll/node-syslogh",
+  "bugs": {
+    "url": "https://github.com/moll/node-syslogh/issues"
+  },
+  "os": [
+    "!win32"
+  ],
+  "author": "Andri Möll <andri@dot.ee> (http://themoll.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/moll/node-syslogh.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "main": "index.js",
+  "scripts": {
+    "node-gyp": "node-gyp",
+    "test": "make test",
+    "install": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "bindings": "^1",
+    "nan": "^2.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^6",
+    "must": "< 1",
+    "underscore": "^1.9"
+  },
+  "engines": {
+    "node": ">= 0.10.28 < 0.11 || >= 0.11.15"
+  },
+  "gypfile": true,
+  "directories": {
+    "test": "test"
+  }
 }
