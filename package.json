@@ -1,6 +1,6 @@
 {
   "name": "ac-syslogh",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Log to the system's Syslog. Provides simple native bindings to <syslog.h> and syslog(3). Works on Node v0.10 up to v4.",
   "keywords": [
     "syslog",
